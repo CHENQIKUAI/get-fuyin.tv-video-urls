@@ -30,7 +30,7 @@ class List extends React.Component {
                 {
                     datasource.map(url => {
                         return (
-                            <p>{url}</p>
+                            <p key={url}>{url}</p>
                         )
                     })
                 }

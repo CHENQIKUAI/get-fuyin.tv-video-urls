@@ -5,11 +5,9 @@ const iconv = require('iconv-lite');
 var express = require('express');
 var router = express.Router();
 
-
 const baseURL = "https://www.fuyin.tv";
 
-
-router.post('/', (req, res, next) => {
+router.post('/getDownloadUrls', (req, res, next) => {
     const url = req.body.url
 
     new Promise((resolve) => {
